@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>UNW Bootcamp 2021: Opioid Crisis Statistical Visualizions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira Sans:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+</head>
+<body>
+  <div class="wrapper">
+    <!--Header Start-->
+    <div class="row m-3 my-4">
+      <div class="bg-dark p-5 rounded-lg text-center header">
+        <h1 class="display-4">CA Home Value Predictor</h1>
+        <p class="lead text-info">JIMPestimate</p>
+        <small class="text-muted">Irina Gasnikova, Jemima Florence, Matt Rentner, Patrick Barrett</small>
+      </div>
+    </div>
+    <!--Header Start--> 
+    
+    <!--Tab Start-->
+    <div class="row m-3 my-4">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#problem" type="button" role="tab" aria-controls="problem" aria-selected="true">Problem Statement</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#analysis" type="button" role="tab" aria-controls="analysis" aria-selected="false">Data Analysis</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#ml" type="button" role="tab" aria-controls="ml" aria-selected="false">Machine Learning</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#predictor" type="button" role="tab" aria-controls="predictor" aria-selected="false">Home Value Predictor</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="problem" role="tabpanel" aria-labelledby="problem-tab"> Problem Statement Content </div>
+        <div class="tab-pane fade" id="analysis" role="tabpanel" aria-labelledby="analysis-tab">Analysis Content</div>
+        <div class="tab-pane fade" id="ml" role="tabpanel" aria-labelledby="ml-tab">ML regression content</div>
+        <div class="tab-pane fade" id="predictor" role="tabpanel" aria-labelledby="predictor-tab">
+          
+        </div>
+      </div>
+    </div>
+    <!--Tab End-->   
+
+
+  </div>  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+  integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+  crossorigin=""></script>
+   <!-- API key -->
+  <script type="text/javascript" src="config.js"></script>
+  <script src="app21.js"></script>
+</body>
+</html>
