@@ -17,4 +17,22 @@ body, html, #map
     margin-top: -3rem !important;
 }
 
+.jimpestimate {
+    font-weight: bolder;
+    font-stretch: extra-expanded;
+    color: rebeccapurple;
+    font-size: 5rem;
+}
+
+.jimpestimate-label {
+    font-weight: bolder;
+    font-stretch: extra-expanded;
+    color: lime;
+    font-size: 2rem;
+}
+
+.jimpestimate-result {
+    visibility: hidden;
+}
+
 
